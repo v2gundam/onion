@@ -109,7 +109,7 @@ https://v2gundam.github.io/onion/
 https://v2gundam.github.io/onion/mobile.html
 ```
 
-2026-05-26 21:29 KST 확인 결과 `https://v2gundam.github.io/onion/`와 `/onion/mobile.html`은 아직 404입니다. 공개 GitHub Actions API에서 `pages build and deployment` 실행 `26448027536`이 failure로 끝났고, `Checkout` 단계 annotation은 `unable to access 'https://github.com/v2gundam/onion/': The requested URL returned error: 403`입니다.
+2026-05-26 21:31 KST 확인 결과 `https://v2gundam.github.io/onion/`와 `/onion/mobile.html`은 아직 404입니다. 공개 GitHub Actions API에서 최신 `pages build and deployment` 실행 `26448123934`이 failure로 끝났고, 직전 실행과 동일하게 `Checkout` 단계에서 실패했습니다.
 
 코드 빌드 오류라기보다 GitHub Pages/Actions 권한 또는 Pages 소스 설정 문제로 보입니다. 저장소 관리자 화면에서 다음을 확인합니다.
 

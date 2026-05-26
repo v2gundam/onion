@@ -29,5 +29,5 @@
 - Continuation note: local validation on the new machine passed for `mobile.js`, `popup.js`, JSON parsing, 10 sections, 117 items, and 0 missing local image files.
 - Continuation note: local HTTP server returned 200 for `mobile.html`, `mobile-data.json`, `site.webmanifest`, and `icons/icon128.png`.
 - Continuation note: GitHub repository canonical URL is `https://github.com/v2gundam/onion.git`; Pages should be checked at `https://v2gundam.github.io/onion/`.
-- Continuation note: public Pages URLs returned 404. Earlier GitHub Actions run `26447520642` for `pages build and deployment` completed with conclusion `failure`. After commit `95e4521`, run `26448027536` also failed in `Checkout` with annotations reporting `unable to access 'https://github.com/v2gundam/onion/': The requested URL returned error: 403`.
+- Continuation note: public Pages URLs returned 404. Earlier GitHub Actions run `26447520642` for `pages build and deployment` completed with conclusion `failure`. After commits `95e4521` and `c69b678`, runs `26448027536` and `26448123934` also failed in `Checkout`; annotations on `26448027536` reported `unable to access 'https://github.com/v2gundam/onion/': The requested URL returned error: 403`.
 - PWA polish: generated `icons/icon192.png` and `icons/icon512.png`, added them to `site.webmanifest`, and added `.nojekyll` for static Pages publishing.
