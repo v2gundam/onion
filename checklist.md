@@ -16,6 +16,6 @@
 - [x] Verify mobile web app references local assets only.
 - [x] Add 192px and 512px PWA icons.
 - [x] Add `.nojekyll` for static GitHub Pages publishing.
-- [ ] Fix failed GitHub Pages build in GitHub Actions.
+- [ ] Fix GitHub Pages build `Checkout` 403 in repository settings.
 - [ ] Verify published Pages URL opens.
 - [ ] Test mobile copy and Add to Home Screen on a real phone.

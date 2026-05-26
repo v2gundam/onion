@@ -11,16 +11,14 @@
 
 ## 저장소
 
-- GitHub 원격: `https://github.com/v2gundam/v2gundam.github.io.git`.
-- 이전 원격 `https://github.com/v2gundam/onion.git`은 현재 GitHub에서 `v2gundam.github.io` 저장소로 리다이렉트됩니다.
+- GitHub 원격: `https://github.com/v2gundam/onion.git`.
 - 기본 브랜치: `main`.
-- 현재 커밋: `9a7a0e Document project handoff`.
 
 다른 PC에서 이어받는 명령입니다.
 
 ```powershell
-git clone https://github.com/v2gundam/v2gundam.github.io.git
-cd v2gundam.github.io
+git clone https://github.com/v2gundam/onion.git
+cd onion
 ```
 
 이미 clone 되어 있으면 다음 명령을 사용합니다.
@@ -99,19 +97,26 @@ Folder: /root
 Custom domain: 비워둠
 ```
 
-현재 저장소 이름이 `v2gundam.github.io`이므로 예상 Pages URL입니다.
+예상 Pages URL입니다.
 
 ```text
-https://v2gundam.github.io/
+https://v2gundam.github.io/onion/
 ```
 
 직접 모바일 페이지를 열려면 다음 URL을 사용합니다.
 
 ```text
-https://v2gundam.github.io/mobile.html
+https://v2gundam.github.io/onion/mobile.html
 ```
 
-2026-05-26 21:24 KST 확인 결과 `https://v2gundam.github.io/`와 `/mobile.html`은 아직 404입니다. 공개 GitHub Actions API에서 `pages build and deployment` 실행 `26447520642`가 failure로 표시되었습니다. `Actions` 탭에서 실패 로그를 확인한 뒤 Pages를 다시 배포해야 합니다.
+2026-05-26 21:29 KST 확인 결과 `https://v2gundam.github.io/onion/`와 `/onion/mobile.html`은 아직 404입니다. 공개 GitHub Actions API에서 `pages build and deployment` 실행 `26448027536`이 failure로 끝났고, `Checkout` 단계 annotation은 `unable to access 'https://github.com/v2gundam/onion/': The requested URL returned error: 403`입니다.
+
+코드 빌드 오류라기보다 GitHub Pages/Actions 권한 또는 Pages 소스 설정 문제로 보입니다. 저장소 관리자 화면에서 다음을 확인합니다.
+
+```text
+Settings → Pages → Source: Deploy from a branch / Branch: main / Folder: /root
+Settings → Actions → General → Workflow permissions: Read and write permissions
+```
 
 ## Chrome/Edge 확장 사용
 
@@ -126,7 +131,7 @@ chrome://extensions → 개발자 모드 → 압축해제된 확장 프로그램
 ## 남은 작업
 
 - GitHub Pages 배포가 실제로 열리는지 확인합니다.
-- GitHub Actions의 Pages build 실패 원인을 확인하고 재배포합니다.
+- GitHub Actions의 Pages build `Checkout` 403 실패를 저장소 설정에서 해결하고 재배포합니다.
 - 모바일에서 복사 기능과 홈 화면 추가를 테스트합니다.
 - 공개 배포 전 양파군 이미지 사용 허락 또는 사용 조건을 확인합니다.
 - Chrome Web Store 배포를 진행할 경우 스토어용 스크린샷과 개인정보 항목을 준비합니다.

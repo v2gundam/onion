@@ -28,6 +28,6 @@
 - Handoff documentation: added `HANDOFF.md` so another PC can clone or pull the repo and continue from the current state.
 - Continuation note: local validation on the new machine passed for `mobile.js`, `popup.js`, JSON parsing, 10 sections, 117 items, and 0 missing local image files.
 - Continuation note: local HTTP server returned 200 for `mobile.html`, `mobile-data.json`, `site.webmanifest`, and `icons/icon128.png`.
-- Continuation note: GitHub now redirects `v2gundam/onion` to `v2gundam/v2gundam.github.io`; Pages should be checked at `https://v2gundam.github.io/`, not `/onion/`.
-- Continuation note: public Pages URLs returned 404, and GitHub Actions run `26447520642` for `pages build and deployment` is completed with conclusion `failure`. Logs require repository admin access.
+- Continuation note: GitHub repository canonical URL is `https://github.com/v2gundam/onion.git`; Pages should be checked at `https://v2gundam.github.io/onion/`.
+- Continuation note: public Pages URLs returned 404. Earlier GitHub Actions run `26447520642` for `pages build and deployment` completed with conclusion `failure`. After commit `95e4521`, run `26448027536` also failed in `Checkout` with annotations reporting `unable to access 'https://github.com/v2gundam/onion/': The requested URL returned error: 403`.
 - PWA polish: generated `icons/icon192.png` and `icons/icon512.png`, added them to `site.webmanifest`, and added `.nojekyll` for static Pages publishing.
