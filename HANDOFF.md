@@ -11,15 +11,16 @@
 
 ## 저장소
 
-- GitHub 원격: `https://github.com/v2gundam/onion.git`.
+- GitHub 원격: `https://github.com/v2gundam/v2gundam.github.io.git`.
+- 이전 원격 `https://github.com/v2gundam/onion.git`은 현재 GitHub에서 `v2gundam.github.io` 저장소로 리다이렉트됩니다.
 - 기본 브랜치: `main`.
-- 현재 최초 커밋: `01fa605 Add onion emoji PWA and extension`.
+- 현재 커밋: `9a7a0e Document project handoff`.
 
 다른 PC에서 이어받는 명령입니다.
 
 ```powershell
-git clone https://github.com/v2gundam/onion.git
-cd onion
+git clone https://github.com/v2gundam/v2gundam.github.io.git
+cd v2gundam.github.io
 ```
 
 이미 clone 되어 있으면 다음 명령을 사용합니다.
@@ -35,6 +36,7 @@ git pull origin main
 - `mobile.js`: 모바일 웹앱 렌더링과 클립보드 복사 로직입니다.
 - `mobile-data.json`: 섹션 10개와 이모지 117개 데이터입니다.
 - `site.webmanifest`: PWA 설치 정보입니다.
+- `.nojekyll`: GitHub Pages에서 Jekyll 처리를 건너뛰고 정적 파일을 그대로 배포하도록 합니다.
 - `manifest.json`: Chrome/Edge 확장 프로그램 manifest입니다.
 - `popup.html`: 확장 프로그램 팝업 화면입니다.
 - `popup.js`: 확장 프로그램 클립보드 복사 로직입니다.
@@ -52,6 +54,7 @@ git pull origin main
 - 확장 설명은 `dvd prime 전용 양파군 이모지 확장 프로그램`입니다.
 - 팝업과 NOTICE에 원작자 Ethan Liu, 劉順龍과 이미지 출처 dprime.kr 고지를 넣었습니다.
 - 모바일 PWA는 홈 화면 추가를 염두에 두고 `site.webmanifest`를 포함합니다.
+- PWA 아이콘은 48, 128, 192, 512 PNG를 포함합니다.
 
 ## 로컬 검증 명령
 
@@ -96,19 +99,19 @@ Folder: /root
 Custom domain: 비워둠
 ```
 
-예상 Pages URL입니다.
+현재 저장소 이름이 `v2gundam.github.io`이므로 예상 Pages URL입니다.
 
 ```text
-https://v2gundam.github.io/onion/
+https://v2gundam.github.io/
 ```
 
 직접 모바일 페이지를 열려면 다음 URL을 사용합니다.
 
 ```text
-https://v2gundam.github.io/onion/mobile.html
+https://v2gundam.github.io/mobile.html
 ```
 
-접속이 안 되면 `Actions` 탭에서 Pages 배포가 성공했는지 확인합니다.
+2026-05-26 21:24 KST 확인 결과 `https://v2gundam.github.io/`와 `/mobile.html`은 아직 404입니다. 공개 GitHub Actions API에서 `pages build and deployment` 실행 `26447520642`가 failure로 표시되었습니다. `Actions` 탭에서 실패 로그를 확인한 뒤 Pages를 다시 배포해야 합니다.
 
 ## Chrome/Edge 확장 사용
 
@@ -123,6 +126,7 @@ chrome://extensions → 개발자 모드 → 압축해제된 확장 프로그램
 ## 남은 작업
 
 - GitHub Pages 배포가 실제로 열리는지 확인합니다.
+- GitHub Actions의 Pages build 실패 원인을 확인하고 재배포합니다.
 - 모바일에서 복사 기능과 홈 화면 추가를 테스트합니다.
 - 공개 배포 전 양파군 이미지 사용 허락 또는 사용 조건을 확인합니다.
 - Chrome Web Store 배포를 진행할 경우 스토어용 스크린샷과 개인정보 항목을 준비합니다.

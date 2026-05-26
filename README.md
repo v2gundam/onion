@@ -6,6 +6,8 @@ dvd prime 전용 양파군 이모지 확장 프로그램과 모바일 웹앱입�
 
 GitHub Pages에서 `mobile.html`을 열면 모바일 브라우저에서 양파군 이모지 코드를 복사할 수 있습니다.
 
+예상 공개 URL은 `https://v2gundam.github.io/mobile.html`입니다.
+
 ## Chrome/Edge 확장
 
 Chrome 또는 Edge의 확장 관리 화면에서 이 저장소 폴더를 압축해제 확장으로 로드할 수 있습니다.

@@ -26,3 +26,8 @@
 - Mobile web app verification: `mobile-data.json` has 10 sections and 117 emoji items, all local image files exist, no `dprime.kr` runtime URL remains, and a local server returned 200 for `mobile.html`, `mobile-data.json`, and `site.webmanifest`.
 - GitHub Pages prep: added `index.html` redirecting to `mobile.html`, `README.md`, and `.gitignore` excluding generated `dist/` and source cache `old/`.
 - Handoff documentation: added `HANDOFF.md` so another PC can clone or pull the repo and continue from the current state.
+- Continuation note: local validation on the new machine passed for `mobile.js`, `popup.js`, JSON parsing, 10 sections, 117 items, and 0 missing local image files.
+- Continuation note: local HTTP server returned 200 for `mobile.html`, `mobile-data.json`, `site.webmanifest`, and `icons/icon128.png`.
+- Continuation note: GitHub now redirects `v2gundam/onion` to `v2gundam/v2gundam.github.io`; Pages should be checked at `https://v2gundam.github.io/`, not `/onion/`.
+- Continuation note: public Pages URLs returned 404, and GitHub Actions run `26447520642` for `pages build and deployment` is completed with conclusion `failure`. Logs require repository admin access.
+- PWA polish: generated `icons/icon192.png` and `icons/icon512.png`, added them to `site.webmanifest`, and added `.nojekyll` for static Pages publishing.

@@ -14,3 +14,8 @@
 - [x] Add static mobile web app entrypoint.
 - [x] Add mobile PWA manifest.
 - [x] Verify mobile web app references local assets only.
+- [x] Add 192px and 512px PWA icons.
+- [x] Add `.nojekyll` for static GitHub Pages publishing.
+- [ ] Fix failed GitHub Pages build in GitHub Actions.
+- [ ] Verify published Pages URL opens.
+- [ ] Test mobile copy and Add to Home Screen on a real phone.
