@@ -1,0 +1,22 @@
+{
+  "name": "양파군 대피소",
+  "short_name": "양파군",
+  "description": "dvd prime 전용 양파군 이모지 모바일 웹앱",
+  "start_url": "mobile.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eaf6fc",
+  "theme_color": "#eaf6fc",
+  "icons": [
+    {
+      "src": "icons/icon48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>양파군대피소</title>
+  <style>
+    body {
+      max-width: 610px;
+      min-width: 400px;
+      width: 610px;
+      margin: 0 auto;
+    }
+
+    html {
+      width: 610px;
+      min-width: 400px;
+      max-width: 800px;
+      background-color: aliceblue;
+    }
+
+    .frame {
+      width: 100vw;
+    }
+    table {
+      width: 610px;
+    }
+
+    button {
+      background-color: transparent;
+      width: 14vw;
+      max-width: 140px;
+      
+      border-color: lightblue;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .notification-container {
+      background: rgba(0, 0, 0, 0.781);
+      border-radius: 10px;
+      padding: 15px 20px;
+      position: fixed;
+
+      top: 50%;
+      left: 30vw;
+      display: none;
+      color: white;
+      text-decoration: solid;
+      font-size: xx-large;
+    }
+
+
+    .notification-container.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="notification-container" id="notification-container">
+    <p>Copied to clipboard</p>
+  </div>
+  <div id="frame">
+
+    <table cellpadding="2vw" cellspacing="2px" >
+      <tr>
+        <td colspan="12" align="center">긍정적인 양파군</td>
+      </tr>
+      <tr>
+        <td colspan="12">웃는 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton2"><img src="https://dprime.kr/g2/img/icons/em/2.gif">
+            <div id="o2">[EMO:2]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton3"><img src="https://dprime.kr/g2/img/icons/em/3.gif">
+            <div id="o3">[EMO:3]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton4"><img src="https://dprime.kr/g2/img/icons/em/4.gif">
+            <div id="o4">[EMO:4]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton5"><img src="https://dprime.kr/g2/img/icons/em/5.gif">
+            <div id="o5">[EMO:5]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton6"><img src="https://dprime.kr/g2/img/icons/em/6.gif">
+            <div id="o6">[EMO:6]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton7"><img src="https://dprime.kr/g2/img/icons/em/7.gif">
+            <div id="o7">[EMO:7]</div>
+          </button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton8"><img src="https://dprime.kr/g2/img/icons/em/8.gif">
+            <div id="o8">[EMO:8]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton9"><img src="https://dprime.kr/g2/img/icons/em/9.gif">
+            <div id="o9">[EMO:9]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton10"><img src="https://dprime.kr/g2/img/icons/em/10.gif">
+            <div id="o10">[EMO:10]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton11"><img src="https://dprime.kr/g2/img/icons/em/11.gif">
+            <div id="o11">[EMO:11]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton12"><img src="https://dprime.kr/g2/img/icons/em/12.gif">
+            <div id="o12">[EMO:12]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton13"><img src="https://dprime.kr/g2/img/icons/em/13.gif">
+            <div id="o13">[EMO:13]</div>
+          </button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton14"><img src="https://dprime.kr/g2/img/icons/em/14.gif">
+            <div id="o14">[EMO:14]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton15"><img src="https://dprime.kr/g2/img/icons/em/15.gif">
+            <div id="o15">[EMO:15]</div>
+          </button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>평온한 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton17"><img src="https://dprime.kr/g2/img/icons/em/17.gif">
+            <div id="o17">[EMO:17]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton18"><img src="https://dprime.kr/g2/img/icons/em/18.gif">
+            <div id="o18">[EMO:18]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton19"><img src="https://dprime.kr/g2/img/icons/em/19.gif">
+            <div id="o19">[EMO:19]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton20"><img src="https://dprime.kr/g2/img/icons/em/20.gif">
+            <div id="o20">[EMO:20]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton21"><img src="https://dprime.kr/g2/img/icons/em/21.gif">
+            <div id="o21">[EMO:21]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton22"><img src="https://dprime.kr/g2/img/icons/em/22.gif">
+            <div id="o22">[EMO:22]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton23"><img src="https://dprime.kr/g2/img/icons/em/23.gif">
+            <div id="o23">[EMO:23]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton24"><img src="https://dprime.kr/g2/img/icons/em/24.gif">
+            <div id="o24">[EMO:24]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton25"><img src="https://dprime.kr/g2/img/icons/em/25.gif">
+            <div id="o25">[EMO:25]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>긍정적 리액션 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton27"><img src="https://dprime.kr/g2/img/icons/em/27.gif">
+            <div id="o27">[EMO:27]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton28"><img src="https://dprime.kr/g2/img/icons/em/28.gif">
+            <div id="o28">[EMO:28]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton29"><img src="https://dprime.kr/g2/img/icons/em/29.gif">
+            <div id="o29">[EMO:29]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton30"><img src="https://dprime.kr/g2/img/icons/em/30.gif">
+            <div id="o30">[EMO:30]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton31"><img src="https://dprime.kr/g2/img/icons/em/31.gif">
+            <div id="o31">[EMO:31]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton32"><img src="https://dprime.kr/g2/img/icons/em/32.gif">
+            <div id="o32">[EMO:32]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton33"><img src="https://dprime.kr/g2/img/icons/em/33.gif">
+            <div id="o33">[EMO:33]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton34"><img src="https://dprime.kr/g2/img/icons/em/34.gif">
+            <div id="o34">[EMO:34]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton35"><img src="https://dprime.kr/g2/img/icons/em/35.gif">
+            <div id="o35">[EMO:35]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton36"><img src="https://dprime.kr/g2/img/icons/em/36.gif">
+            <div id="o36">[EMO:36]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton37"><img src="https://dprime.kr/g2/img/icons/em/37.gif">
+            <div id="o37">[EMO:37]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton38"><img src="https://dprime.kr/g2/img/icons/em/38.gif">
+            <div id="o38">[EMO:38]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton39"><img src="https://dprime.kr/g2/img/icons/em/39.gif">
+            <div id="o39">[EMO:39]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton40"><img src="https://dprime.kr/g2/img/icons/em/40.gif">
+            <div id="o40">[EMO:40]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton41"><img src="https://dprime.kr/g2/img/icons/em/41.gif">
+            <div id="o41">[EMO:41]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton42"><img src="https://dprime.kr/g2/img/icons/em/42.gif">
+            <div id="o42">[EMO:42]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton43"><img src="https://dprime.kr/g2/img/icons/em/43.gif">
+            <div id="o43">[EMO:43]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton44"><img src="https://dprime.kr/g2/img/icons/em/44.gif">
+            <div id="o44">[EMO:44]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12" align="center"><br><br><br>중립적인 양파군</td>
+      </tr>
+      <tr>
+        <td colspan="12">놀란 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton46"><img src="https://dprime.kr/g2/img/icons/em/46.gif">
+            <div id="o46">[EMO:46]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton47"><img src="https://dprime.kr/g2/img/icons/em/47.gif">
+            <div id="o47">[EMO:47]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton48"><img src="https://dprime.kr/g2/img/icons/em/48.gif">
+            <div id="o48">[EMO:48]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton49"><img src="https://dprime.kr/g2/img/icons/em/49.gif">
+            <div id="o49">[EMO:49]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton50"><img src="https://dprime.kr/g2/img/icons/em/50.gif">
+            <div id="o50">[EMO:50]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton51"><img src="https://dprime.kr/g2/img/icons/em/51.gif">
+            <div id="o51">[EMO:51]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton52"><img src="https://dprime.kr/g2/img/icons/em/52.gif">
+            <div id="o52">[EMO:52]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton53"><img src="https://dprime.kr/g2/img/icons/em/53.gif">
+            <div id="o53">[EMO:53]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton54"><img src="https://dprime.kr/g2/img/icons/em/54.gif">
+            <div id="o54">[EMO:54]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton55"><img src="https://dprime.kr/g2/img/icons/em/55.gif">
+            <div id="o55">[EMO:55]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton56"><img src="https://dprime.kr/g2/img/icons/em/56.gif">
+            <div id="o56">[EMO:56]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton57"><img src="https://dprime.kr/g2/img/icons/em/57.gif">
+            <div id="o57">[EMO:57]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>좌절한 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton59"><img src="https://dprime.kr/g2/img/icons/em/59.gif">
+            <div id="o59">[EMO:59]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton60"><img src="https://dprime.kr/g2/img/icons/em/60.gif">
+            <div id="o60">[EMO:60]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton61"><img src="https://dprime.kr/g2/img/icons/em/61.gif">
+            <div id="o61">[EMO:61]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton62"><img src="https://dprime.kr/g2/img/icons/em/62.gif">
+            <div id="o62">[EMO:62]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton63"><img src="https://dprime.kr/g2/img/icons/em/63.gif">
+            <div id="o63">[EMO:63]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton64"><img src="https://dprime.kr/g2/img/icons/em/64.gif">
+            <div id="o64">[EMO:64]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton65"><img src="https://dprime.kr/g2/img/icons/em/65.gif">
+            <div id="o65">[EMO:65]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton66"><img src="https://dprime.kr/g2/img/icons/em/66.gif">
+            <div id="o66">[EMO:66]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton67"><img src="https://dprime.kr/g2/img/icons/em/67.gif">
+            <div id="o67">[EMO:67]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>우는 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton69"><img src="https://dprime.kr/g2/img/icons/em/69.gif">
+            <div id="o69">[EMO:69]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton70"><img src="https://dprime.kr/g2/img/icons/em/70.gif">
+            <div id="o70">[EMO:70]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton71"><img src="https://dprime.kr/g2/img/icons/em/71.gif">
+            <div id="o71">[EMO:71]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton72"><img src="https://dprime.kr/g2/img/icons/em/72.gif">
+            <div id="o72">[EMO:72]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton73"><img src="https://dprime.kr/g2/img/icons/em/73.gif">
+            <div id="o73">[EMO:73]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton74"><img src="https://dprime.kr/g2/img/icons/em/74.gif">
+            <div id="o74">[EMO:74]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>아픈 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton76"><img src="https://dprime.kr/g2/img/icons/em/76.gif">
+            <div id="o76">[EMO:76]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton77"><img src="https://dprime.kr/g2/img/icons/em/77.gif">
+            <div id="o77">[EMO:77]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton78"><img src="https://dprime.kr/g2/img/icons/em/78.gif">
+            <div id="o78">[EMO:78]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton79"><img src="https://dprime.kr/g2/img/icons/em/79.gif">
+            <div id="o79">[EMO:79]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton80"><img src="https://dprime.kr/g2/img/icons/em/80.gif">
+            <div id="o80">[EMO:80]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton81"><img src="https://dprime.kr/g2/img/icons/em/81.gif">
+            <div id="o81">[EMO:81]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton82"><img src="https://dprime.kr/g2/img/icons/em/82.gif">
+            <div id="o82">[EMO:82]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton83"><img src="https://dprime.kr/g2/img/icons/em/83.gif">
+            <div id="o83">[EMO:83]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton84"><img src="https://dprime.kr/g2/img/icons/em/84.gif">
+            <div id="o84">[EMO:84]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton85"><img src="https://dprime.kr/g2/img/icons/em/85.gif">
+            <div id="o85">[EMO:85]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12">중립적 리엑션 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton87"><img src="https://dprime.kr/g2/img/icons/em/87.gif">
+            <div id="o87">[EMO:87]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton88"><img src="https://dprime.kr/g2/img/icons/em/88.gif">
+            <div id="o88">[EMO:88]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton89"><img src="https://dprime.kr/g2/img/icons/em/89.gif">
+            <div id="o89">[EMO:89]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton90"><img src="https://dprime.kr/g2/img/icons/em/90.gif">
+            <div id="o90">[EMO:90]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton91"><img src="https://dprime.kr/g2/img/icons/em/91.gif">
+            <div id="o91">[EMO:91]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton92"><img src="https://dprime.kr/g2/img/icons/em/92.gif">
+            <div id="o92">[EMO:92]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton93"><img src="https://dprime.kr/g2/img/icons/em/93.gif">
+            <div id="o93">[EMO:93]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton94"><img src="https://dprime.kr/g2/img/icons/em/94.gif">
+            <div id="o94">[EMO:94]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton95"><img src="https://dprime.kr/g2/img/icons/em/95.gif">
+            <div id="o95">[EMO:95]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton96"><img src="https://dprime.kr/g2/img/icons/em/96.gif">
+            <div id="o96">[EMO:96]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton97"><img src="https://dprime.kr/g2/img/icons/em/97.gif">
+            <div id="o97">[EMO:97]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton98"><img src="https://dprime.kr/g2/img/icons/em/98.gif">
+            <div id="o98">[EMO:98]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12" align="center"><br><br><br>부정적인 양파군</td>
+      </tr>
+      <tr>
+        <td colspan="12">화난 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton100"><img src="https://dprime.kr/g2/img/icons/em/100.gif">
+            <div id="o100">[EMO:100]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton101"><img src="https://dprime.kr/g2/img/icons/em/101.gif">
+            <div id="o101">[EMO:101]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton102"><img src="https://dprime.kr/g2/img/icons/em/102.gif">
+            <div id="o102">[EMO:102]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton103"><img src="https://dprime.kr/g2/img/icons/em/103.gif">
+            <div id="o103">[EMO:103]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton104"><img src="https://dprime.kr/g2/img/icons/em/104.gif">
+            <div id="o104">[EMO:104]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton105"><img src="https://dprime.kr/g2/img/icons/em/105.gif">
+            <div id="o105">[EMO:105]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton106"><img src="https://dprime.kr/g2/img/icons/em/106.gif">
+            <div id="o106">[EMO:106]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton107"><img src="https://dprime.kr/g2/img/icons/em/107.gif">
+            <div id="o107">[EMO:107]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton108"><img src="https://dprime.kr/g2/img/icons/em/108.gif">
+            <div id="o108">[EMO:108]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton109"><img src="https://dprime.kr/g2/img/icons/em/109.gif">
+            <div id="o109">[EMO:109]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton110"><img src="https://dprime.kr/g2/img/icons/em/110.gif">
+            <div id="o110">[EMO:110]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton111"><img src="https://dprime.kr/g2/img/icons/em/111.gif">
+            <div id="o111">[EMO:111]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton112"><img src="https://dprime.kr/g2/img/icons/em/112.gif">
+            <div id="o112">[EMO:112]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton113"><img src="https://dprime.kr/g2/img/icons/em/113.gif">
+            <div id="o113">[EMO:113]</div>
+          </button>
+
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="12"><br>냉소적 리액션 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton115"><img src="https://dprime.kr/g2/img/icons/em/115.gif">
+            <div id="o115">[EMO:115]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton116"><img src="https://dprime.kr/g2/img/icons/em/116.gif">
+            <div id="o116">[EMO:116]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton117"><img src="https://dprime.kr/g2/img/icons/em/117.gif">
+            <div id="o117">[EMO:117]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton118"><img src="https://dprime.kr/g2/img/icons/em/118.gif">
+            <div id="o118">[EMO:118]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton119"><img src="https://dprime.kr/g2/img/icons/em/119.gif">
+            <div id="o119">[EMO:119]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton120"><img src="https://dprime.kr/g2/img/icons/em/120.gif">
+            <div id="o120">[EMO:120]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton121"><img src="https://dprime.kr/g2/img/icons/em/121.gif">
+            <div id="o121">[EMO:121]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton122"><img src="https://dprime.kr/g2/img/icons/em/122.gif">
+            <div id="o122">[EMO:122]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton123"><img src="https://dprime.kr/g2/img/icons/em/123.gif">
+            <div id="o123">[EMO:123]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton124"><img src="https://dprime.kr/g2/img/icons/em/124.gif">
+            <div id="o124">[EMO:124]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton125"><img src="https://dprime.kr/g2/img/icons/em/125.gif">
+            <div id="o125">[EMO:125]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton126"><img src="https://dprime.kr/g2/img/icons/em/126.gif">
+            <div id="o126">[EMO:126]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton127"><img src="https://dprime.kr/g2/img/icons/em/127.gif">
+            <div id="o127">[EMO:127]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <script>
+    const notification = document.getElementById('notification-container')
+    const showNotification = () => {
+      notification.classList.add('show')
+      setTimeout(() => {
+        notification.classList.remove('show')
+      }, 2000)
+    }
+
+    // div 취득
+    const o2 = document.getElementById("o2");
+    const o3 = document.getElementById("o3");
+    const o4 = document.getElementById("o4");
+    const o5 = document.getElementById("o5");
+    const o6 = document.getElementById("o6");
+    const o7 = document.getElementById("o7");
+    const o8 = document.getElementById("o8");
+    const o9 = document.getElementById("o9");
+    const o10 = document.getElementById("o10");
+    const o11 = document.getElementById("o11");
+    const o12 = document.getElementById("o12");
+    const o13 = document.getElementById("o13");
+    const o14 = document.getElementById("o14");
+    const o15 = document.getElementById("o15");
+
+    const o17 = document.getElementById("o17");
+    const o18 = document.getElementById("o18");
+    const o19 = document.getElementById("o19");
+    const o20 = document.getElementById("o20");
+    const o21 = document.getElementById("o21");
+    const o22 = document.getElementById("o22");
+    const o23 = document.getElementById("o23");
+    const o24 = document.getElementById("o24");
+    const o25 = document.getElementById("o25");
+
+    const o27 = document.getElementById("o27");
+    const o28 = document.getElementById("o28");
+    const o29 = document.getElementById("o29");
+    const o30 = document.getElementById("o30");
+    const o31 = document.getElementById("o31");
+    const o32 = document.getElementById("o32");
+    const o33 = document.getElementById("o33");
+    const o34 = document.getElementById("o34");
+    const o35 = document.getElementById("o35");
+    const o36 = document.getElementById("o36");
+    const o37 = document.getElementById("o37");
+    const o38 = document.getElementById("o38");
+    const o39 = document.getElementById("o39");
+    const o40 = document.getElementById("o40");
+    const o41 = document.getElementById("o41");
+    const o42 = document.getElementById("o42");
+    const o43 = document.getElementById("o43");
+    const o44 = document.getElementById("o44");
+
+    const o46 = document.getElementById("o46");
+    const o47 = document.getElementById("o47");
+    const o48 = document.getElementById("o48");
+    const o49 = document.getElementById("o49");
+    const o50 = document.getElementById("o50");
+    const o51 = document.getElementById("o51");
+    const o52 = document.getElementById("o52");
+    const o53 = document.getElementById("o53");
+    const o54 = document.getElementById("o54");
+    const o55 = document.getElementById("o55");
+    const o56 = document.getElementById("o56");
+    const o57 = document.getElementById("o57");
+
+    const o59 = document.getElementById("o59");
+    const o60 = document.getElementById("o60");
+    const o61 = document.getElementById("o61");
+    const o62 = document.getElementById("o62");
+    const o63 = document.getElementById("o63");
+    const o64 = document.getElementById("o64");
+    const o65 = document.getElementById("o65");
+    const o66 = document.getElementById("o66");
+    const o67 = document.getElementById("o67");
+
+    const o69 = document.getElementById("o69");
+    const o70 = document.getElementById("o70");
+    const o71 = document.getElementById("o71");
+    const o72 = document.getElementById("o72");
+    const o73 = document.getElementById("o73");
+    const o74 = document.getElementById("o74");
+
+    const o76 = document.getElementById("o76");
+    const o77 = document.getElementById("o77");
+    const o78 = document.getElementById("o78");
+    const o79 = document.getElementById("o79");
+    const o80 = document.getElementById("o80");
+    const o81 = document.getElementById("o81");
+    const o82 = document.getElementById("o82");
+    const o83 = document.getElementById("o83");
+    const o84 = document.getElementById("o84");
+    const o85 = document.getElementById("o85");
+
+    const o87 = document.getElementById("o87");
+    const o88 = document.getElementById("o88");
+    const o89 = document.getElementById("o89");
+    const o90 = document.getElementById("o90");
+    const o91 = document.getElementById("o91");
+    const o92 = document.getElementById("o92");
+    const o93 = document.getElementById("o93");
+    const o94 = document.getElementById("o94");
+    const o95 = document.getElementById("o95");
+    const o96 = document.getElementById("o96");
+    const o97 = document.getElementById("o97");
+    const o98 = document.getElementById("o98");
+
+    const o100 = document.getElementById("o100");
+    const o101 = document.getElementById("o101");
+    const o102 = document.getElementById("o102");
+    const o103 = document.getElementById("o103");
+    const o104 = document.getElementById("o104");
+    const o105 = document.getElementById("o105");
+    const o106 = document.getElementById("o106");
+    const o107 = document.getElementById("o107");
+    const o108 = document.getElementById("o108");
+    const o109 = document.getElementById("o109");
+    const o110 = document.getElementById("o110");
+    const o111 = document.getElementById("o111");
+    const o112 = document.getElementById("o112");
+    const o113 = document.getElementById("o113");
+
+    const o115 = document.getElementById("o115");
+    const o116 = document.getElementById("o116");
+    const o117 = document.getElementById("o117");
+    const o118 = document.getElementById("o118");
+    const o119 = document.getElementById("o119");
+    const o120 = document.getElementById("o120");
+    const o121 = document.getElementById("o121");
+    const o122 = document.getElementById("o122");
+    const o123 = document.getElementById("o123");
+    const o124 = document.getElementById("o124");
+    const o125 = document.getElementById("o125");
+    const o126 = document.getElementById("o126");
+    const o127 = document.getElementById("o127");
+
+    // button 클릭 이벤트
+
+
+    document.getElementById("myButton2").onclick = () => {
+      window.navigator.clipboard.writeText(o2.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton3").onclick = () => {
+      window.navigator.clipboard.writeText(o3.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton4").onclick = () => {
+      window.navigator.clipboard.writeText(o4.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton5").onclick = () => {
+      window.navigator.clipboard.writeText(o5.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton6").onclick = () => {
+      window.navigator.clipboard.writeText(o6.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton7").onclick = () => {
+      window.navigator.clipboard.writeText(o7.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton8").onclick = () => {
+      window.navigator.clipboard.writeText(o8.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton9").onclick = () => {
+      window.navigator.clipboard.writeText(o9.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton10").onclick = () => {
+      window.navigator.clipboard.writeText(o10.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton11").onclick = () => {
+      window.navigator.clipboard.writeText(o11.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton12").onclick = () => {
+      window.navigator.clipboard.writeText(o12.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton13").onclick = () => {
+      window.navigator.clipboard.writeText(o13.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton14").onclick = () => {
+      window.navigator.clipboard.writeText(o14.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton15").onclick = () => {
+      window.navigator.clipboard.writeText(o15.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton17").onclick = () => {
+      window.navigator.clipboard.writeText(o17.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton18").onclick = () => {
+      window.navigator.clipboard.writeText(o18.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton19").onclick = () => {
+      window.navigator.clipboard.writeText(o19.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton20").onclick = () => {
+      window.navigator.clipboard.writeText(o20.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton21").onclick = () => {
+      window.navigator.clipboard.writeText(o21.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton22").onclick = () => {
+      window.navigator.clipboard.writeText(o22.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton23").onclick = () => {
+      window.navigator.clipboard.writeText(o23.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton24").onclick = () => {
+      window.navigator.clipboard.writeText(o24.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton25").onclick = () => {
+      window.navigator.clipboard.writeText(o25.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton27").onclick = () => {
+      window.navigator.clipboard.writeText(o27.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton28").onclick = () => {
+      window.navigator.clipboard.writeText(o28.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton29").onclick = () => {
+      window.navigator.clipboard.writeText(o29.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton30").onclick = () => {
+      window.navigator.clipboard.writeText(o30.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton31").onclick = () => {
+      window.navigator.clipboard.writeText(o31.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton32").onclick = () => {
+      window.navigator.clipboard.writeText(o32.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton33").onclick = () => {
+      window.navigator.clipboard.writeText(o33.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton34").onclick = () => {
+      window.navigator.clipboard.writeText(o34.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton35").onclick = () => {
+      window.navigator.clipboard.writeText(o35.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton36").onclick = () => {
+      window.navigator.clipboard.writeText(o36.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton37").onclick = () => {
+      window.navigator.clipboard.writeText(o37.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton38").onclick = () => {
+      window.navigator.clipboard.writeText(o38.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton39").onclick = () => {
+      window.navigator.clipboard.writeText(o39.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton40").onclick = () => {
+      window.navigator.clipboard.writeText(o40.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton41").onclick = () => {
+      window.navigator.clipboard.writeText(o41.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton42").onclick = () => {
+      window.navigator.clipboard.writeText(o42.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton43").onclick = () => {
+      window.navigator.clipboard.writeText(o43.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton44").onclick = () => {
+      window.navigator.clipboard.writeText(o44.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton46").onclick = () => {
+      window.navigator.clipboard.writeText(o46.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton47").onclick = () => {
+      window.navigator.clipboard.writeText(o47.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton48").onclick = () => {
+      window.navigator.clipboard.writeText(o48.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton49").onclick = () => {
+      window.navigator.clipboard.writeText(o49.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton50").onclick = () => {
+      window.navigator.clipboard.writeText(o50.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton51").onclick = () => {
+      window.navigator.clipboard.writeText(o51.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton52").onclick = () => {
+      window.navigator.clipboard.writeText(o52.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton53").onclick = () => {
+      window.navigator.clipboard.writeText(o53.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton54").onclick = () => {
+      window.navigator.clipboard.writeText(o54.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton55").onclick = () => {
+      window.navigator.clipboard.writeText(o55.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton56").onclick = () => {
+      window.navigator.clipboard.writeText(o56.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton57").onclick = () => {
+      window.navigator.clipboard.writeText(o57.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton59").onclick = () => {
+      window.navigator.clipboard.writeText(o59.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton60").onclick = () => {
+      window.navigator.clipboard.writeText(o60.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton61").onclick = () => {
+      window.navigator.clipboard.writeText(o61.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton62").onclick = () => {
+      window.navigator.clipboard.writeText(o62.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton63").onclick = () => {
+      window.navigator.clipboard.writeText(o63.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton64").onclick = () => {
+      window.navigator.clipboard.writeText(o64.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton65").onclick = () => {
+      window.navigator.clipboard.writeText(o65.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton66").onclick = () => {
+      window.navigator.clipboard.writeText(o66.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton67").onclick = () => {
+      window.navigator.clipboard.writeText(o67.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton69").onclick = () => {
+      window.navigator.clipboard.writeText(o69.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton70").onclick = () => {
+      window.navigator.clipboard.writeText(o70.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton71").onclick = () => {
+      window.navigator.clipboard.writeText(o71.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton72").onclick = () => {
+      window.navigator.clipboard.writeText(o72.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton73").onclick = () => {
+      window.navigator.clipboard.writeText(o73.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton74").onclick = () => {
+      window.navigator.clipboard.writeText(o74.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton76").onclick = () => {
+      window.navigator.clipboard.writeText(o76.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton77").onclick = () => {
+      window.navigator.clipboard.writeText(o77.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton78").onclick = () => {
+      window.navigator.clipboard.writeText(o78.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton79").onclick = () => {
+      window.navigator.clipboard.writeText(o79.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton80").onclick = () => {
+      window.navigator.clipboard.writeText(o80.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton81").onclick = () => {
+      window.navigator.clipboard.writeText(o81.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton82").onclick = () => {
+      window.navigator.clipboard.writeText(o82.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton83").onclick = () => {
+      window.navigator.clipboard.writeText(o83.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton84").onclick = () => {
+      window.navigator.clipboard.writeText(o84.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton85").onclick = () => {
+      window.navigator.clipboard.writeText(o85.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton87").onclick = () => {
+      window.navigator.clipboard.writeText(o87.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton88").onclick = () => {
+      window.navigator.clipboard.writeText(o88.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton89").onclick = () => {
+      window.navigator.clipboard.writeText(o89.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton90").onclick = () => {
+      window.navigator.clipboard.writeText(o90.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton91").onclick = () => {
+      window.navigator.clipboard.writeText(o91.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton92").onclick = () => {
+      window.navigator.clipboard.writeText(o92.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton93").onclick = () => {
+      window.navigator.clipboard.writeText(o93.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton94").onclick = () => {
+      window.navigator.clipboard.writeText(o94.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton95").onclick = () => {
+      window.navigator.clipboard.writeText(o95.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton96").onclick = () => {
+      window.navigator.clipboard.writeText(o96.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton97").onclick = () => {
+      window.navigator.clipboard.writeText(o97.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton98").onclick = () => {
+      window.navigator.clipboard.writeText(o98.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton100").onclick = () => {
+      window.navigator.clipboard.writeText(o100.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton101").onclick = () => {
+      window.navigator.clipboard.writeText(o101.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton102").onclick = () => {
+      window.navigator.clipboard.writeText(o102.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton103").onclick = () => {
+      window.navigator.clipboard.writeText(o103.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton104").onclick = () => {
+      window.navigator.clipboard.writeText(o104.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton105").onclick = () => {
+      window.navigator.clipboard.writeText(o105.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton106").onclick = () => {
+      window.navigator.clipboard.writeText(o106.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton107").onclick = () => {
+      window.navigator.clipboard.writeText(o107.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton108").onclick = () => {
+      window.navigator.clipboard.writeText(o108.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton109").onclick = () => {
+      window.navigator.clipboard.writeText(o109.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton110").onclick = () => {
+      window.navigator.clipboard.writeText(o110.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton111").onclick = () => {
+      window.navigator.clipboard.writeText(o111.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton112").onclick = () => {
+      window.navigator.clipboard.writeText(o112.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton113").onclick = () => {
+      window.navigator.clipboard.writeText(o113.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton115").onclick = () => {
+      window.navigator.clipboard.writeText(o115.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton116").onclick = () => {
+      window.navigator.clipboard.writeText(o116.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton117").onclick = () => {
+      window.navigator.clipboard.writeText(o117.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton118").onclick = () => {
+      window.navigator.clipboard.writeText(o118.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton119").onclick = () => {
+      window.navigator.clipboard.writeText(o119.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton120").onclick = () => {
+      window.navigator.clipboard.writeText(o120.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton121").onclick = () => {
+      window.navigator.clipboard.writeText(o121.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton122").onclick = () => {
+      window.navigator.clipboard.writeText(o122.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton123").onclick = () => {
+      window.navigator.clipboard.writeText(o123.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton124").onclick = () => {
+      window.navigator.clipboard.writeText(o124.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton125").onclick = () => {
+      window.navigator.clipboard.writeText(o125.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton126").onclick = () => {
+      window.navigator.clipboard.writeText(o126.textContent).then(() => {
+        showNotification()
+      });
+    };
+
+    document.getElementById("myButton127").onclick = () => {
+      window.navigator.clipboard.writeText(o127.textContent).then(() => {
+        showNotification()
+      });
+    };
+  </script>
+</body>
+</html>

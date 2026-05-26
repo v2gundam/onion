@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>양파군대피소</title>
+  <style>
+    body {
+      max-width: 610px;
+      min-width: 400px;
+      width: 610px;
+      margin: 0 auto;
+    }
+
+    html {
+      width: 610px;
+      min-width: 400px;
+      max-width: 800px;
+      background-color: aliceblue;
+    }
+
+    .frame {
+      width: 100vw;
+    }
+    table {
+      width: 610px;
+    }
+
+    button {
+      background-color: transparent;
+      width: 14vw;
+      max-width: 140px;
+      
+      border-color: lightblue;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .notification-container {
+      background: rgba(0, 0, 0, 0.781);
+      border-radius: 10px;
+      padding: 15px 20px;
+      position: fixed;
+
+      top: 50%;
+      left: 30vw;
+      display: none;
+      color: white;
+      text-decoration: solid;
+      font-size: xx-large;
+    }
+
+
+    .notification-container.show {
+      display: block;
+    }
+
+    .copyright-notice {
+      color: #4f6673;
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 16px 0 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="notification-container" id="notification-container">
+    <p>Copied to clipboard</p>
+  </div>
+  <div id="frame">
+
+    <table cellpadding="2vw" cellspacing="2px" >
+      <tr>
+        <td colspan="12" align="center">긍정적인 양파군</td>
+      </tr>
+      <tr>
+        <td colspan="12">웃는 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton2"><img src="images/em/2.gif">
+            <div id="o2">[EMO:2]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton3"><img src="images/em/3.gif">
+            <div id="o3">[EMO:3]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton4"><img src="images/em/4.gif">
+            <div id="o4">[EMO:4]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton5"><img src="images/em/5.gif">
+            <div id="o5">[EMO:5]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton6"><img src="images/em/6.gif">
+            <div id="o6">[EMO:6]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton7"><img src="images/em/7.gif">
+            <div id="o7">[EMO:7]</div>
+          </button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton8"><img src="images/em/8.gif">
+            <div id="o8">[EMO:8]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton9"><img src="images/em/9.gif">
+            <div id="o9">[EMO:9]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton10"><img src="images/em/10.gif">
+            <div id="o10">[EMO:10]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton11"><img src="images/em/11.gif">
+            <div id="o11">[EMO:11]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton12"><img src="images/em/12.gif">
+            <div id="o12">[EMO:12]</div>
+          </button></td>
+        <td></td>
+        <td><button id="myButton13"><img src="images/em/13.gif">
+            <div id="o13">[EMO:13]</div>
+          </button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton14"><img src="images/em/14.gif">
+            <div id="o14">[EMO:14]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton15"><img src="images/em/15.gif">
+            <div id="o15">[EMO:15]</div>
+          </button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>평온한 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton17"><img src="images/em/17.gif">
+            <div id="o17">[EMO:17]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton18"><img src="images/em/18.gif">
+            <div id="o18">[EMO:18]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton19"><img src="images/em/19.gif">
+            <div id="o19">[EMO:19]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton20"><img src="images/em/20.gif">
+            <div id="o20">[EMO:20]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton21"><img src="images/em/21.gif">
+            <div id="o21">[EMO:21]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton22"><img src="images/em/22.gif">
+            <div id="o22">[EMO:22]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton23"><img src="images/em/23.gif">
+            <div id="o23">[EMO:23]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton24"><img src="images/em/24.gif">
+            <div id="o24">[EMO:24]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton25"><img src="images/em/25.gif">
+            <div id="o25">[EMO:25]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>긍정적 리액션 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton27"><img src="images/em/27.gif">
+            <div id="o27">[EMO:27]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton28"><img src="images/em/28.gif">
+            <div id="o28">[EMO:28]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton29"><img src="images/em/29.gif">
+            <div id="o29">[EMO:29]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton30"><img src="images/em/30.gif">
+            <div id="o30">[EMO:30]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton31"><img src="images/em/31.gif">
+            <div id="o31">[EMO:31]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton32"><img src="images/em/32.gif">
+            <div id="o32">[EMO:32]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton33"><img src="images/em/33.gif">
+            <div id="o33">[EMO:33]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton34"><img src="images/em/34.gif">
+            <div id="o34">[EMO:34]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton35"><img src="images/em/35.gif">
+            <div id="o35">[EMO:35]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton36"><img src="images/em/36.gif">
+            <div id="o36">[EMO:36]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton37"><img src="images/em/37.gif">
+            <div id="o37">[EMO:37]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton38"><img src="images/em/38.gif">
+            <div id="o38">[EMO:38]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton39"><img src="images/em/39.gif">
+            <div id="o39">[EMO:39]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton40"><img src="images/em/40.gif">
+            <div id="o40">[EMO:40]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton41"><img src="images/em/41.gif">
+            <div id="o41">[EMO:41]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton42"><img src="images/em/42.gif">
+            <div id="o42">[EMO:42]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton43"><img src="images/em/43.gif">
+            <div id="o43">[EMO:43]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton44"><img src="images/em/44.gif">
+            <div id="o44">[EMO:44]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12" align="center"><br><br><br>중립적인 양파군</td>
+      </tr>
+      <tr>
+        <td colspan="12">놀란 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton46"><img src="images/em/46.gif">
+            <div id="o46">[EMO:46]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton47"><img src="images/em/47.gif">
+            <div id="o47">[EMO:47]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton48"><img src="images/em/48.gif">
+            <div id="o48">[EMO:48]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton49"><img src="images/em/49.gif">
+            <div id="o49">[EMO:49]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton50"><img src="images/em/50.gif">
+            <div id="o50">[EMO:50]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton51"><img src="images/em/51.gif">
+            <div id="o51">[EMO:51]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton52"><img src="images/em/52.gif">
+            <div id="o52">[EMO:52]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton53"><img src="images/em/53.gif">
+            <div id="o53">[EMO:53]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton54"><img src="images/em/54.gif">
+            <div id="o54">[EMO:54]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton55"><img src="images/em/55.gif">
+            <div id="o55">[EMO:55]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton56"><img src="images/em/56.gif">
+            <div id="o56">[EMO:56]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton57"><img src="images/em/57.gif">
+            <div id="o57">[EMO:57]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>좌절한 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton59"><img src="images/em/59.gif">
+            <div id="o59">[EMO:59]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton60"><img src="images/em/60.gif">
+            <div id="o60">[EMO:60]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton61"><img src="images/em/61.gif">
+            <div id="o61">[EMO:61]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton62"><img src="images/em/62.gif">
+            <div id="o62">[EMO:62]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton63"><img src="images/em/63.gif">
+            <div id="o63">[EMO:63]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton64"><img src="images/em/64.gif">
+            <div id="o64">[EMO:64]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton65"><img src="images/em/65.gif">
+            <div id="o65">[EMO:65]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton66"><img src="images/em/66.gif">
+            <div id="o66">[EMO:66]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton67"><img src="images/em/67.gif">
+            <div id="o67">[EMO:67]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>우는 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton69"><img src="images/em/69.gif">
+            <div id="o69">[EMO:69]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton70"><img src="images/em/70.gif">
+            <div id="o70">[EMO:70]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton71"><img src="images/em/71.gif">
+            <div id="o71">[EMO:71]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton72"><img src="images/em/72.gif">
+            <div id="o72">[EMO:72]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton73"><img src="images/em/73.gif">
+            <div id="o73">[EMO:73]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton74"><img src="images/em/74.gif">
+            <div id="o74">[EMO:74]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12"><br>아픈 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton76"><img src="images/em/76.gif">
+            <div id="o76">[EMO:76]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton77"><img src="images/em/77.gif">
+            <div id="o77">[EMO:77]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton78"><img src="images/em/78.gif">
+            <div id="o78">[EMO:78]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton79"><img src="images/em/79.gif">
+            <div id="o79">[EMO:79]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton80"><img src="images/em/80.gif">
+            <div id="o80">[EMO:80]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton81"><img src="images/em/81.gif">
+            <div id="o81">[EMO:81]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton82"><img src="images/em/82.gif">
+            <div id="o82">[EMO:82]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton83"><img src="images/em/83.gif">
+            <div id="o83">[EMO:83]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton84"><img src="images/em/84.gif">
+            <div id="o84">[EMO:84]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton85"><img src="images/em/85.gif">
+            <div id="o85">[EMO:85]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="12">중립적 리엑션 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton87"><img src="images/em/87.gif">
+            <div id="o87">[EMO:87]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton88"><img src="images/em/88.gif">
+            <div id="o88">[EMO:88]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton89"><img src="images/em/89.gif">
+            <div id="o89">[EMO:89]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton90"><img src="images/em/90.gif">
+            <div id="o90">[EMO:90]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton91"><img src="images/em/91.gif">
+            <div id="o91">[EMO:91]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton92"><img src="images/em/92.gif">
+            <div id="o92">[EMO:92]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton93"><img src="images/em/93.gif">
+            <div id="o93">[EMO:93]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton94"><img src="images/em/94.gif">
+            <div id="o94">[EMO:94]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton95"><img src="images/em/95.gif">
+            <div id="o95">[EMO:95]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton96"><img src="images/em/96.gif">
+            <div id="o96">[EMO:96]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton97"><img src="images/em/97.gif">
+            <div id="o97">[EMO:97]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton98"><img src="images/em/98.gif">
+            <div id="o98">[EMO:98]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="12" align="center"><br><br><br>부정적인 양파군</td>
+      </tr>
+      <tr>
+        <td colspan="12">화난 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton100"><img src="images/em/100.gif">
+            <div id="o100">[EMO:100]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton101"><img src="images/em/101.gif">
+            <div id="o101">[EMO:101]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton102"><img src="images/em/102.gif">
+            <div id="o102">[EMO:102]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton103"><img src="images/em/103.gif">
+            <div id="o103">[EMO:103]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton104"><img src="images/em/104.gif">
+            <div id="o104">[EMO:104]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton105"><img src="images/em/105.gif">
+            <div id="o105">[EMO:105]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton106"><img src="images/em/106.gif">
+            <div id="o106">[EMO:106]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton107"><img src="images/em/107.gif">
+            <div id="o107">[EMO:107]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton108"><img src="images/em/108.gif">
+            <div id="o108">[EMO:108]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton109"><img src="images/em/109.gif">
+            <div id="o109">[EMO:109]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton110"><img src="images/em/110.gif">
+            <div id="o110">[EMO:110]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton111"><img src="images/em/111.gif">
+            <div id="o111">[EMO:111]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton112"><img src="images/em/112.gif">
+            <div id="o112">[EMO:112]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton113"><img src="images/em/113.gif">
+            <div id="o113">[EMO:113]</div>
+          </button>
+
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="12"><br>냉소적 리액션 양파군</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton115"><img src="images/em/115.gif">
+            <div id="o115">[EMO:115]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton116"><img src="images/em/116.gif">
+            <div id="o116">[EMO:116]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton117"><img src="images/em/117.gif">
+            <div id="o117">[EMO:117]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton118"><img src="images/em/118.gif">
+            <div id="o118">[EMO:118]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton119"><img src="images/em/119.gif">
+            <div id="o119">[EMO:119]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton120"><img src="images/em/120.gif">
+            <div id="o120">[EMO:120]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton121"><img src="images/em/121.gif">
+            <div id="o121">[EMO:121]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton122"><img src="images/em/122.gif">
+            <div id="o122">[EMO:122]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton123"><img src="images/em/123.gif">
+            <div id="o123">[EMO:123]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton124"><img src="images/em/124.gif">
+            <div id="o124">[EMO:124]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton125"><img src="images/em/125.gif">
+            <div id="o125">[EMO:125]</div>
+          </button>
+
+        </td>
+        <td></td>
+        <td><button id="myButton126"><img src="images/em/126.gif">
+            <div id="o126">[EMO:126]</div>
+          </button>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="myButton127"><img src="images/em/127.gif">
+            <div id="o127">[EMO:127]</div>
+          </button>
+
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <p class="copyright-notice">
+      양파군 원작자: Ethan Liu(劉順龍). 이미지 출처: dprime.kr. 이미지 저작권은 원 권리자에게 있습니다.
+    </p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
