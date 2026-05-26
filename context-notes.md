@@ -25,3 +25,4 @@
 - Mobile web app implementation: added `mobile.html`, `mobile.js`, `mobile-data.json`, and `site.webmanifest`.
 - Mobile web app verification: `mobile-data.json` has 10 sections and 117 emoji items, all local image files exist, no `dprime.kr` runtime URL remains, and a local server returned 200 for `mobile.html`, `mobile-data.json`, and `site.webmanifest`.
 - GitHub Pages prep: added `index.html` redirecting to `mobile.html`, `README.md`, and `.gitignore` excluding generated `dist/` and source cache `old/`.
+- Handoff documentation: added `HANDOFF.md` so another PC can clone or pull the repo and continue from the current state.
