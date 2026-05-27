@@ -19,3 +19,5 @@
 - [ ] Fix GitHub Pages build `Checkout` 403 in repository settings.
 - [ ] Verify published Pages URL opens.
 - [ ] Test mobile copy and Add to Home Screen on a real phone.
+- [x] Rebuild Chrome extension popup from the current mobile web layout.
+- [x] Package Chrome extension as `dist/yangpa-extension-1.0.1.zip`.

@@ -31,3 +31,4 @@
 - Continuation note: GitHub repository canonical URL is `https://github.com/v2gundam/onion.git`; Pages should be checked at `https://v2gundam.github.io/onion/`.
 - Continuation note: public Pages URLs returned 404. Earlier GitHub Actions run `26447520642` for `pages build and deployment` completed with conclusion `failure`. After commits `95e4521` and `c69b678`, runs `26448027536` and `26448123934` also failed in `Checkout`; annotations on `26448027536` reported `unable to access 'https://github.com/v2gundam/onion/': The requested URL returned error: 403`.
 - PWA polish: generated `icons/icon192.png` and `icons/icon512.png`, added them to `site.webmanifest`, and added `.nojekyll` for static Pages publishing.
+- Extension layout update: replaced `popup.html` with a popup-sized version of the current mobile web layout, reused `mobile.js` and `mobile-data.json`, bumped `manifest.json` to `1.0.1`, and packaged `dist/yangpa-extension-1.0.1.zip`.

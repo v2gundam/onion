@@ -36,8 +36,9 @@ git pull origin main
 - `site.webmanifest`: PWA 설치 정보입니다.
 - `.nojekyll`: GitHub Pages에서 Jekyll 처리를 건너뛰고 정적 파일을 그대로 배포하도록 합니다.
 - `manifest.json`: Chrome/Edge 확장 프로그램 manifest입니다.
-- `popup.html`: 확장 프로그램 팝업 화면입니다.
-- `popup.js`: 확장 프로그램 클립보드 복사 로직입니다.
+- `popup.html`: 확장 프로그램 팝업 화면입니다. 현재 모바일 웹앱 레이아웃을 기반으로 합니다.
+- `mobile.js`: 모바일 웹앱과 확장 팝업의 렌더링/클립보드 복사 로직입니다.
+- `popup.js`: 이전 팝업 복사 로직입니다. 현재 `popup.html`에서는 사용하지 않습니다.
 - `images/em`: 양파군 GIF 117개입니다.
 - `icons`: 17번 이모지를 바탕으로 만든 앱/확장 아이콘입니다.
 - `NOTICE.md`: 원작자, 이미지 출처, 저작권 고지입니다.
@@ -126,7 +127,7 @@ Settings → Actions → General → Workflow permissions: Read and write permis
 chrome://extensions → 개발자 모드 → 압축해제된 확장 프로그램 로드 → 저장소 폴더 선택
 ```
 
-배포용 ZIP은 이전 작업에서 `dist/yangpa-extension-1.0.0.zip`으로 만들었지만 `dist/`는 `.gitignore` 대상입니다. 다른 PC에서는 필요할 때 다시 생성하면 됩니다.
+배포용 ZIP은 현재 작업에서 `dist/yangpa-extension-1.0.1.zip`으로 다시 만들었습니다. 팝업은 웹페이지와 같은 레이아웃이며, `mobile.js`와 `mobile-data.json`을 함께 패키징합니다. `dist/`는 `.gitignore` 대상이므로 다른 PC에서는 필요할 때 다시 생성하면 됩니다.
 
 ## 남은 작업
 
