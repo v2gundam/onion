@@ -32,7 +32,36 @@
     h1 {
       font-size: 20px;
       line-height: 1.2;
+      margin: 0;
+    }
+
+    .header-row {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
       margin: 0 0 10px;
+    }
+
+    .install-button,
+    .install-primary,
+    .install-secondary,
+    .install-close {
+      appearance: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font: inherit;
+      touch-action: manipulation;
+    }
+
+    .install-button {
+      background: #ffffff;
+      border: 1px solid #7fb9d0;
+      color: #173a4a;
+      flex: 0 0 auto;
+      font-size: 13px;
+      line-height: 1.2;
+      padding: 7px 10px;
     }
 
     .tabs {
@@ -115,6 +144,23 @@
       white-space: nowrap;
     }
 
+    .load-error {
+      background: #f8fdff;
+      border: 1px solid #b8d8e6;
+      border-radius: 8px;
+      color: #2d4b59;
+      line-height: 1.55;
+      padding: 16px;
+    }
+
+    .load-error h2 {
+      color: #10202a;
+    }
+
+    .load-error p {
+      margin: 0;
+    }
+
     .toast {
       background: rgba(0, 0, 0, 0.82);
       border-radius: 999px;
@@ -144,14 +190,135 @@
       max-width: 560px;
       text-align: center;
     }
+
+    .footer-install {
+      margin: 0 0 10px;
+    }
+
+    .install-footer-button {
+      background: transparent;
+      border: 0;
+      color: #24566b;
+      cursor: pointer;
+      font: inherit;
+      padding: 0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .install-modal[hidden] {
+      display: none;
+    }
+
+    .install-modal {
+      align-items: center;
+      background: rgba(7, 22, 31, 0.42);
+      display: flex;
+      inset: 0;
+      justify-content: center;
+      padding: 18px;
+      position: fixed;
+      z-index: 4;
+    }
+
+    .install-dialog {
+      background: #f9fdff;
+      border: 1px solid #b8d8e6;
+      border-radius: 8px;
+      box-shadow: 0 18px 42px rgba(7, 22, 31, 0.22);
+      color: #10202a;
+      max-width: 420px;
+      padding: 18px;
+      width: 100%;
+    }
+
+    .install-dialog h2 {
+      font-size: 18px;
+      margin: 0 28px 8px 0;
+    }
+
+    .install-dialog p {
+      color: #2d4b59;
+      font-size: 14px;
+      line-height: 1.55;
+      margin: 0 0 16px;
+    }
+
+    .install-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .install-primary,
+    .install-secondary {
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 12px;
+      text-decoration: none;
+    }
+
+    .install-primary {
+      background: #10202a;
+      border: 1px solid #10202a;
+      color: #ffffff;
+    }
+
+    .install-secondary {
+      background: #ffffff;
+      border: 1px solid #b8d8e6;
+      color: #264a5b;
+    }
+
+    .install-close {
+      background: transparent;
+      border: 0;
+      color: #526b78;
+      font-size: 22px;
+      height: 34px;
+      line-height: 1;
+      padding: 0;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      width: 34px;
+    }
+
+    .install-dialog-header {
+      position: relative;
+    }
+
+    .install-note {
+      color: #5b6e78;
+      display: block;
+      font-size: 12px;
+      line-height: 1.45;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>양파군 대피소</h1>
+    <div class="header-row">
+      <h1>양파군 대피소</h1>
+      <button class="install-button" id="install-open" type="button">설치 안내</button>
+    </div>
     <nav class="tabs" id="category-tabs" aria-label="양파군 분류"></nav>
   </header>
   <main id="app"></main>
+  <div class="install-modal" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="install-title" hidden>
+    <div class="install-dialog">
+      <div class="install-dialog-header">
+        <h2 id="install-title">양파군을 더 편하게 사용하세요</h2>
+        <button class="install-close" id="install-close" type="button" aria-label="설치 안내 닫기">×</button>
+      </div>
+      <p id="install-message"></p>
+      <div class="install-actions" id="install-actions"></div>
+      <span class="install-note" id="install-note"></span>
+    </div>
+  </div>
   <div class="toast" id="toast" role="status" aria-live="polite">복사했습니다.</div>
   <script src="mobile.js"></script>
 </body>
