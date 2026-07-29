@@ -11,7 +11,8 @@ const installNote = document.getElementById("install-note");
 
 const CHROME_EXTENSION_URL = "https://chromewebstore.google.com/detail/fpaiacpgcfodagenmchmmklamldbkaoo?utm_source=item-share-cb";
 const FIREFOX_ADDON_URL = "https://addons.mozilla.org/ko/firefox/addon/%EC%96%91%ED%8C%8C%EA%B5%B0-%EB%8C%80%ED%94%BC%EC%86%8C/";
-const INSTALL_NOTICE_STORAGE_KEY = "yangpa-install-notice-dismissed-v1";
+const SAFARI_EXTENSION_URL = "https://apps.apple.com/us/app/양파군-대피소/id6794869315";
+const INSTALL_NOTICE_STORAGE_KEY = "yangpa-install-notice-dismissed-v2";
 
 let toastTimer;
 
@@ -102,7 +103,7 @@ function getInstallTarget() {
       message: "데스크톱 Firefox에서는 양파군 대피소 애드온을 설치해 바로 이모지 코드를 복사할 수 있습니다.",
       primaryLabel: "Firefox 애드온 열기",
       primaryUrl: FIREFOX_ADDON_URL,
-      note: "Firefox 애드온은 Mozilla 검토나 공개 상태에 따라 페이지가 바로 열리지 않을 수 있습니다."
+      note: "웹앱으로 사용하려면 브라우저 메뉴에서 홈 화면에 추가 또는 앱 설치를 선택하세요."
     };
   }
 
@@ -112,46 +113,48 @@ function getInstallTarget() {
       message: "데스크톱 Chrome과 Edge에서는 양파군 대피소 확장 프로그램을 설치해 브라우저에서 바로 이모지 코드를 복사할 수 있습니다.",
       primaryLabel: "Chrome 웹 스토어 열기",
       primaryUrl: CHROME_EXTENSION_URL,
-      note: ""
-    };
-  }
-
-  if (isIOS) {
-    return {
-      title: "홈 화면에 추가해서 앱처럼 사용하세요",
-      message: "iPhone과 iPad에서는 Safari 공유 버튼을 누른 뒤 홈 화면에 추가를 선택하면 양파군 대피소를 앱처럼 열 수 있습니다.",
-      primaryLabel: "확인",
-      primaryUrl: "",
-      note: "iOS에서는 브라우저 확장 대신 홈 화면 추가 방식이 가장 간단합니다."
-    };
-  }
-
-  if (isAndroid || isMobile) {
-    return {
-      title: "홈 화면에 추가해서 앱처럼 사용하세요",
-      message: "모바일 브라우저 메뉴에서 홈 화면에 추가 또는 앱 설치를 선택하면 양파군 대피소를 바로 실행할 수 있습니다.",
-      primaryLabel: "확인",
-      primaryUrl: "",
-      note: "모바일에서는 확장보다 홈 화면 추가 방식이 안정적입니다."
+      note: "웹앱으로 사용하려면 브라우저 메뉴에서 앱 설치를 선택하세요."
     };
   }
 
   if (isSafari) {
     return {
-      title: "지원되는 데스크톱 확장을 사용하세요",
-      message: "Safari 확장은 제공하지 않습니다. 데스크톱에서는 Chrome 계열 브라우저나 Firefox에서 양파군 대피소 확장을 사용할 수 있습니다.",
+      title: "Safari 확장으로 더 빠르게 사용하세요",
+      message: "App Store에서 양파군 대피소를 설치하면 Safari 확장으로 이모지 코드를 바로 복사할 수 있습니다.",
+      primaryLabel: "Safari App Store 열기",
+      primaryUrl: SAFARI_EXTENSION_URL,
+      note: isIOS
+        ? "웹앱으로 사용하려면 Safari 공유 버튼에서 홈 화면에 추가를 선택하세요."
+        : "웹앱으로 사용하려면 Safari 공유 메뉴에서 Dock에 추가를 선택하세요."
+    };
+  }
+
+  if (isIOS) {
+    return {
+      title: "Safari 확장을 설치하세요",
+      message: "iPhone과 iPad에서는 App Store에서 양파군 대피소 Safari 확장을 설치할 수 있습니다.",
+      primaryLabel: "Safari App Store 열기",
+      primaryUrl: SAFARI_EXTENSION_URL,
+      note: "웹앱으로 사용하려면 Safari 공유 버튼에서 홈 화면에 추가를 선택하세요."
+    };
+  }
+
+  if (isAndroid || isMobile) {
+    return {
+      title: "사용 환경에 맞는 확장을 설치하세요",
+      message: "Chrome은 Chrome 웹 스토어, Firefox는 Firefox 애드온, Safari는 App Store에서 양파군 대피소를 설치할 수 있습니다.",
       primaryLabel: "Chrome 웹 스토어 열기",
       primaryUrl: CHROME_EXTENSION_URL,
-      note: "Safari에서는 별도 확장 없이 웹앱으로 사용할 수 있습니다."
+      note: "웹앱으로 사용하려면 브라우저 메뉴에서 홈 화면에 추가 또는 앱 설치를 선택하세요."
     };
   }
 
   return {
     title: "사용 환경에 맞게 설치하세요",
-    message: "Chrome 계열 브라우저는 Chrome 웹 스토어, Firefox는 Firefox 애드온 페이지에서 양파군 대피소를 설치할 수 있습니다.",
+    message: "Chrome은 Chrome 웹 스토어, Firefox는 Firefox 애드온, Safari는 App Store에서 양파군 대피소를 설치할 수 있습니다.",
     primaryLabel: "Chrome 웹 스토어 열기",
     primaryUrl: CHROME_EXTENSION_URL,
-    note: ""
+    note: "웹앱으로 사용하려면 브라우저 메뉴에서 홈 화면에 추가 또는 앱 설치를 선택하세요."
   };
 }
 
@@ -195,12 +198,16 @@ function openInstallModal({ markDismissed = false } = {}) {
     links.push(createInstallCloseButton(target.primaryLabel));
   }
 
+  if (target.primaryUrl !== CHROME_EXTENSION_URL) {
+    links.push(createInstallLink("Chrome 웹 스토어", CHROME_EXTENSION_URL));
+  }
+
   if (target.primaryUrl !== FIREFOX_ADDON_URL) {
     links.push(createInstallLink("Firefox 애드온", FIREFOX_ADDON_URL));
   }
 
-  if (target.primaryUrl !== CHROME_EXTENSION_URL) {
-    links.push(createInstallLink("Chrome 확장", CHROME_EXTENSION_URL));
+  if (target.primaryUrl !== SAFARI_EXTENSION_URL) {
+    links.push(createInstallLink("Safari App Store", SAFARI_EXTENSION_URL));
   }
 
   installActions.replaceChildren(...links);
@@ -227,7 +234,7 @@ function renderInstallFooter() {
   const button = document.createElement("button");
   button.className = "install-footer-button";
   button.type = "button";
-  button.textContent = "확장/앱 설치 안내";
+  button.textContent = "브라우저 확장 설치 안내";
   button.addEventListener("click", () => openInstallModal({ markDismissed: true }));
 
   footerInstall.append(button);
